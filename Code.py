@@ -9,10 +9,9 @@ from sklearn.metrics import accuracy_score
 import pandas as pd
 import numpy as np
 
-# Load dataset (Replace with actual dataset)
 data = pd.read_csv("/content/alterations_across_samples.csv")  # Example dataset
 X = data.drop(columns=["Study_ID"])  # Features
-y = data["label"]  # Labels
+y = data["Label"]  # Replace "Label" with the actual column name if different
 
 # Standardize the data
 scaler = StandardScaler()
